@@ -30,7 +30,12 @@
             %>
             <div class="products-ui">
                 <div>
-                    <%-- ここに並べ替えボタンと検索ボックスを作成する --%>
+                	<a href="<%=request.getContextPath()%>/list?order=desc">
+                         <img src="images/desc.png" alt="降順に並べ替え" class="sort-img">
+                    </a>
+                    <a href="<%=request.getContextPath()%>/list?order=asc">
+                         <img src="images/asc.png" alt="昇順に並べ替え" class="sort-img">
+                    </a>
                 </div>
                 <a href="<%= request.getContextPath() %>/register" class="btn">商品登録</a>
             </div>
